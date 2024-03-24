@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="container">
+
+      
+        <div id="buttons">
+            <button id="sign_in_button" onclick="sign_in_btn_clicked(event)">
+               
+                Sign-in
+            </button>
+
+            <!-- <button id="sign_up_button" onclick="sign_up_btn_clicked(event)"> -->
+                
+                <button id="sign_up_button" onclick="sign_up_btn_clicked(event)">
+                Sign-Up
+            </button>
+        </div>
+        <div id="sign-up" >
+            <form id="register_details" onsubmit="get_details(event)">
+                <h2 id="sign_up_head">SIGN-UP</h2>
+                <label for="company_name">Company Name</label>
+                <input type="text" id="company_name" placeholder="company Name" required> 
+
+
+                <label for="location">State Location</label>
+                <select id="location" required>
+                    <option value="" selected disabled>Select a state/UT</option>
+                    <option value="37">Andhra Pradesh (New)</option>
+                    <option value="28">Andhra Pradesh (Old)</option>
+                    <option value="35">Andaman & Nicobar Islands</option>
+                    <option value="12">Arunachal Pradesh</option>
+                    <option value="18">Assam</option>
+                    <option value="13">Bihar</option>
+                    <option value="04">Chandigarh</option>
+                    <option value="22">Chhattisgarh</option>
+                    <option value="01">Jammu & Kashmir</option>
+                    <option value="20">Jharkhand</option>
+                    <option value="29">Karnataka</option>
+                    <option value="32">Kerala</option>
+                    <option value="17">Meghalaya</option>
+                    <option value="23">Madhya Pradesh</option>
+                    <option value="27">Maharashtra</option>
+                    <option value="14">Manipur</option>
+                    <option value="15">Mizoram</option>
+                    <option value="07">Delhi</option>
+                    <option value="25">Daman & Diu</option>
+                    <option value="26">Dadra & Nagar Haveli</option>
+                    <option value="31">Lakshadweep</option>
+                    <option value="30">Goa</option>
+                    <option value="24">Gujarat</option>
+                    <option value="06">Haryana</option>
+                    <option value="20">Himachal Pradesh</option>
+                    <option value="09">Uttar Pradesh</option>
+                    <option value="03">Punjab</option>
+                    <option value="16">Tripura</option>
+                    <option value="33">Tamil Nadu</option>
+                    <option value="34">Puducherry</option>
+                    <option value="19">West Bengal</option>
+                    <option value="05">Uttarakhand</option>
+                    <option value="11">Sikkim</option>
+                    <option value="10">Bihar</option>
+                    <option value="21">Orissa</option>
+                    <option value="36">Telengana</option>
+                    <option value="02">Himachal Pradesh</option>
+                    <option value="08">Rajasthan</option>
+                    <option value="02">West Bengal</option>
+                    <option value="08">Daman & Diu</option>
+                    <option value="09">Dadra & Nagar Haveli</option>
+                    <option value="37">Andhra Pradesh (New)</option>
+                </select>
+<!-- 
+                <label for="location">company Location</label>   
+                <input type="text" id="location" placeholder="Location"> -->
+
+
+                <label for="pan_number">PAN Number</label>
+                <input type="text" id="pan_number" placeholder="PAN Number"required>
+
+                <label for="no_of_entity">Number of Entity of same PAN number</label>
+                <input type="text" id="no_of_entity" placeholder="NO of org with same PAN Number" required>
+
+                <label for="govt">Does your org. belongs to GOVT. bodies    </label>
+                <select name="" id="govt">
+                    <option value="Z">No</option>
+                    <option value="">Yes</option>
+                </select>
+
+                <label for="gst_num">GST Number</label>
+                <input type="text" id="gst_num" placeholder="GST Number" required>
+                
+                <input type="submit" value="Register">
+
+            </form>
+        </div>
+
+        <div id="sign-in">
+            
+            <form id="log_in">
+                <h2 id="sign_in">SIGN-IN</h2>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="username">
+ 
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password">
+
+                <input type="submit" value="Log-in" style="margin-top:5px; margin-bottom: 5px;">
+
+                <input type="text" onclick="get-data(event)">
+
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
